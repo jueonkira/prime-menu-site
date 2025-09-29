@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>메뉴판</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 원본 비율 유지하며 화면에 맞춤 */
+    display: block;
+  }
+
+  button {
+    position: absolute;
+    top: 15%;   /* 화면 세로 기준, 약간 위 */
+    left: 30%;  /* 화면 왼쪽에서 약간 띄움 */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #d9534f;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10; /* 이미지 위로 버튼 올라오게 */
+  }
+
+  button:hover {
+    background: #c9302c;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="menu.png" alt="메뉴판 이미지">
+    <button onclick="alert('토스뱅크 1002-1687-5068 (예금주: 김병민)')">결제하기</button>
+  </div>
+</body>
+</html>
